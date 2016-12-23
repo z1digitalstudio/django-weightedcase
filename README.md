@@ -6,7 +6,7 @@ django-weightedcase extends django Case and When to be able to obtain a weighted
 It requires Django >= 1.7.
 
 # Installation
-pip install git+https://github.com/commite/django-weightedcase.git#egg=django-weightedcase-1.0
+$ pip install git+https://github.com/commite/django-weightedcase.git#egg=django-weightedcase-1.0
 
 # Usage
 There are two basic classes: WeightedCase and WeigthedWhen. The usage is very similar to django's Case and When. 
