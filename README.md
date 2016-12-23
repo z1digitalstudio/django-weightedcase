@@ -95,4 +95,5 @@ We will have 7 possibilities:
     )
   )
  `
- In this case, every house will have a 'weight' with a value of 0,1 or 2, and 'roomweight' with value of 0, 0.5 or 1. 
+ In this case, every house will have a 'weight' with a value of 0, 1 or 2, and 'roomweight' 
+ with value of 0, 0.5 or 1. 
