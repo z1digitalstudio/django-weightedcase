@@ -5,6 +5,9 @@ django-weightedcase extends django Case and When to be able to obtain a weighted
 # Dependencies
 It requires Django >= 1.7.
 
+# Installation
+pip install git+https://github.com/commite/django-weightedcase.git#egg=django-weightedcase-1.0
+
 # Usage
 There are two basic classes: WeightedCase and WeigthedWhen. The usage is very similar to django's Case and When. 
 The main difference is that weight should be added to each When. It's possible to define a var_name to save the weight.
@@ -24,6 +27,9 @@ Our queryset will be queryset=House.objects.all()
 
 We will ponderate the queryset like this:
 ```
+  from weightedcase.models import WeightedCase, WeightedWhen
+  from weightedcase.utils import ponderate_queryset
+
   qs = ponderate_queryset(
     queryset,
     WeightedCase(
@@ -67,6 +73,9 @@ We will have 7 possibilities:
  but we will store the room's weight in a different variable. We would do it like this:
  
  ```
+ from weightedcase.models import WeightedCase, WeightedWhen
+ from weightedcase.utils import ponderate_queryset
+ 
  qs = ponderate_queryset(
     queryset,
     WeightedCase(
