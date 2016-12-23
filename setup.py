@@ -23,4 +23,4 @@ setup(
         "Framework :: Django :: 1.7",
         "Framework :: Django :: 1.8"
     ],
-
+)
